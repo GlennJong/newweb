@@ -93,7 +93,12 @@ function Parallax() {
         })
         requestAnimationFrame(run);
     }
-    run()
+
+    // Check Device Width
+    if ($(window).width() > 480) {
+      run()
+    }
+
 }
 Parallax()
 

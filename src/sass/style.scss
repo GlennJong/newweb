@@ -50,12 +50,12 @@ button {
   height: 100%;
   overflow: hidden;
   z-index: 2;
-  box-shadow: 0px 0px 12px hsla(0,0%,0%,.5);
   &.open {
     visibility: visible;
     .main__bg {
       top: 0;
       right: 0;
+      box-shadow: 0px 0px 12px hsla(0,0%,0%,.5);
       transform: rotate(0deg);
       will-change: transform;
     }
