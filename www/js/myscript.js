@@ -1,15 +1,21 @@
 // After loading
 setTimeout(function(){
     $('#heading').addClass('finish')
-},3700)
+}, 2100)
+
+// Afroid Loading Error
+setTimeout(function() {
+    $('body').addClass('load-done')
+}, 5000)
+
 
 // Progress
 function Progress (elem) {
-    $elem = $(elem)
+    var $elem = $(elem);
     var total  = $elem.length;
     var finish = 0;
     $elem.one('load', loaded)
-            .each(checkCompleted)
+         .each(checkCompleted)
 
     function checkCompleted() {
         if (this.complete) {
@@ -20,10 +26,8 @@ function Progress (elem) {
         finish += 1
         var percent = finish / total * 100
         $('.progress .progress-inset').width(percent + '%')
-        // console.log(percent)
         if (percent >= 100) {
             $('body').addClass('load-done')
-            // console.log('work!')
         }
     }
 }
@@ -401,14 +405,14 @@ $(document).ready(function() {
     })
 
     // illustration delay
-    function itemDelay() {
-        $item = $('.section').find('.item')
-        $item.each(function() {
-            var itemNum = $(this).index() * 0.1
-            $(this).css('animation-delay', itemNum + 's')
-        })
-    }
-    itemDelay()
+    // function itemDelay() {
+    //     $item = $('.section').find('.item')
+    //     $item.each(function() {
+    //         var itemNum = $(this).index() * 0.1
+    //         $(this).css('animation-delay', itemNum + 's')
+    //     })
+    // }
+    // itemDelay()
 
     // about
     $('.boardControl button').click(function() {

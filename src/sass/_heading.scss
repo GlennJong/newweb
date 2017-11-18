@@ -1,5 +1,6 @@
 // Heading
 .heading {
+  margin: auto;
   z-index: 1;
   .heading__myname {
     margin-bottom: 24px;
@@ -118,27 +119,27 @@ body.load-done .heading.finish {
       &#g {
         stroke-dasharray: 470;
         stroke-dashoffset: 470;
-          animation: svgTrim 1s ease .5s forwards;
+          animation: svgTrim .5s ease .5s forwards;
       }
       &#l {
         stroke-dasharray: 190;
         stroke-dashoffset: 190;
-          animation: svgTrim .4s ease 1.5s forwards;
+          animation: svgTrim .2s ease 1s forwards;
       }
       &#e {
         stroke-dasharray: 240;
         stroke-dashoffset: 240;
-          animation: svgTrim .6s ease 1.9s forwards;
+          animation: svgTrim .3s ease 1.2s forwards;
       }
       &#n1 {
         stroke-dasharray: 270;
         stroke-dashoffset: 270;
-          animation: svgTrim .6s ease 2.5s forwards;
+          animation: svgTrim .3s ease 1.5s forwards;
       }
       &#n2 {
         stroke-dasharray: 270;
         stroke-dashoffset: 270;
-          animation: svgTrim .6s ease 3.1s forwards;
+          animation: svgTrim .3s ease 1.8s forwards;
       }
     }
   }
@@ -220,8 +221,4 @@ body.load-done .heading.finish {
   width:100%; height:100%;
   display: -webkit-flex;
   display:         flex;
-  -webkit-align-items: center;
-        align-items: center;
-  -webkit-justify-content: center;
-        justify-content: center;
 }

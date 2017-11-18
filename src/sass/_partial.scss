@@ -176,10 +176,10 @@
 			color: hsl(0,0%,35%);
 		}
 		.illus__content--item {
-			visibility: hidden;
+			// visibility: hidden;
 			position: relative;
 			margin-bottom: 48px;
-			animation: illusItem .3s ease forwards;
+			// animation: illusItem .3s ease forwards;
 			.item__img {
 				width: 100%;
 				height: 200px;
